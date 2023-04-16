@@ -4,11 +4,16 @@ WORKDIR /app
 
 COPY requirements.txt ./
 
+
 RUN pip install -r requirements.txt
+
+COPY mysite ./
+
+COPY guestbook ./
 
 EXPOSE 80
 
-CMD ["gunicorn"  , "-b", "0.0.0.0:8000", "mysite.wsgi:application"]
+CMD ["gunicorn"  , "-b", "0.0.0.0:80", "mysite.wsgi:application"]
 
 
 
