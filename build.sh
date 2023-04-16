@@ -2,7 +2,7 @@
 # exit on error
 set -o errexit
 
-poetry lock
+pip install -r requirements.txt
 poetry install
 
 

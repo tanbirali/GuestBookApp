@@ -1,4 +1,4 @@
-#!/home/tanbir/djangoHW/guestBook/.venv/bin/python3
+#!/workspaces/guestBook/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
