@@ -13,6 +13,8 @@ COPY guestbook ./guestbook
 
 COPY render ./render
 
+RUN touch db.sqlite3
+
 EXPOSE 80
 
 CMD ["gunicorn"  , "-b", "0.0.0.0:80", "mysite.wsgi:application"]
