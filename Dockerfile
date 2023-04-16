@@ -15,6 +15,8 @@ COPY render ./render
 
 RUN touch db.sqlite3
 
+RUN python manage.py migrate
+
 EXPOSE 80
 
 CMD ["gunicorn"  , "-b", "0.0.0.0:80", "mysite.wsgi:application"]
