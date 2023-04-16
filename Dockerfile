@@ -13,6 +13,8 @@ COPY guestbook ./guestbook
 
 COPY render ./render
 
+COPY manage.py ./
+
 RUN touch db.sqlite3
 
 RUN python manage.py migrate
