@@ -7,9 +7,9 @@ COPY requirements.txt ./
 
 RUN pip install -r requirements.txt
 
-COPY mysite ./
+COPY mysite ./mysite
 
-COPY guestbook ./
+COPY guestbook ./guestbook
 
 EXPOSE 80
 
