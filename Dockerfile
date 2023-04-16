@@ -11,6 +11,8 @@ COPY mysite ./mysite
 
 COPY guestbook ./guestbook
 
+COPY render ./render
+
 EXPOSE 80
 
 CMD ["gunicorn"  , "-b", "0.0.0.0:80", "mysite.wsgi:application"]
