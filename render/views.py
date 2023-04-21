@@ -20,4 +20,3 @@ def visitors(request):
 
     users = Visitor.objects.all()
     return render(request, 'visitors.html', {'names': users})
-

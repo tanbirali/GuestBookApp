@@ -1,6 +1,18 @@
-<ul>
-    <h1> The visitors are : <br> </h1>
-{% for visitor in names %}
-    <li>{{ visitor.name }}</li>
-{% endfor %}
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest-Book-App</title>
+</head>
+<body>
+    <ul>
+        <h1 style="text-align: center; display: flex; flex-direction: column;"> The visitors are : <br> </h1>
+    {% for visitor in names %}
+        <li style="display: flex; flex-direction: column; text-align: center; font-size: medium; font-weight: 100;">{{ visitor.name }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
+
