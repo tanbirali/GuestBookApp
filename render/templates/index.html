@@ -15,4 +15,11 @@
         <input type="submit" value="Submit" style="margin: 1%;">
         <a href="{% url 'visitors' %}" class="btn btn-primary" style="padding: 1%;">Display</a>
     </form>
+    {% if messages %}
+        {% for message in messages %}
+            {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+
+        {% endfor %}
+
+    {% endif %}
 
